@@ -43,7 +43,7 @@ function buildCharts(sample) {
     var BUBBLE = document.getElementById('bubble');
     Plotly.plot(BUBBLE, bubbleData, bubbleLayout);
     // Build Pie Chart
-    var $pieData = [{
+    var pieData = [{
         values: sampleData['sample_values'].slice(0, 10),
         labels: sampleData['otu_ids'].slice(0, 10),
         hovertext: sampleData['otu_labels'].slice(0, 10),
